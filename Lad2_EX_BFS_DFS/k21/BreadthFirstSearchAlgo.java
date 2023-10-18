@@ -6,11 +6,12 @@ import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+import k21.*;
 
-public class BreadthFirstSearchAlgo implements ISearchAlgo {
+public class BreadthFirstSearchAlgo implements k21.ISearchAlgo {
 
 	@Override
-	public Node execute(Node root, String goal) {
+	public k21.Node execute(k21.Node root, String goal) {
 		// TODO Auto-generated method stub
 		boolean check = false;
 		Queue<Node> frontier = new LinkedList<>();
@@ -227,7 +228,7 @@ public class BreadthFirstSearchAlgo implements ISearchAlgo {
 //			System.out.println(tem1);
 //		}
 //		System.out.println(res);
-
+		while(froint)
 	}
 
 }
