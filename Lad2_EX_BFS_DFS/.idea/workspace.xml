@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd7dff33-7de4-4e98-929e-ad6816d68763" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/k21/BreadthFirstSearchAlgo.java" beforeDir="false" afterPath="$PROJECT_DIR$/k21/BreadthFirstSearchAlgo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k21/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/k21/Edge.java" afterDir="false" />
-    </list>
+    <list default="true" id="bd7dff33-7de4-4e98-929e-ad6816d68763" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,17 +18,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Năm_3/AI/Lad2_EX_BFS_DFS/k21",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Năm_3/AI/Lad2_EX_BFS_DFS/k21&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Lad2_EX_BFS_DFS" />
@@ -58,6 +55,7 @@
       <workItem from="1697096969617" duration="114000" />
       <workItem from="1697097096080" duration="81000" />
       <workItem from="1697097199641" duration="54000" />
+      <workItem from="1697648126448" duration="295000" />
     </task>
     <servers />
   </component>
