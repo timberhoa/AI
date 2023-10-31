@@ -1,6 +1,6 @@
 package lab4.inform.student;
 
-public class Edge {
+public class Edge implements Comparable<Edge> {
 	private Node begin;
 	private Node end;
 	private double weight;
@@ -10,6 +10,7 @@ public class Edge {
 		this.begin = begin;
 		this.end = end;
 		this.weight = weight;
+
 	}
 
 	public Edge(Node begin, Node end) {
@@ -18,7 +19,10 @@ public class Edge {
 		this.end = end;
 		this.weight = 1;
 	}
-
+	@Override
+	public int compareTo(Edge o) {
+		return -this.end.getLabel().compareTo(o.getEnd().getLabel());
+	}
 	public Node getBegin() {
 		return begin;
 	}

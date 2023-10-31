@@ -21,6 +21,9 @@ public class TestAStar {
 		d.addEdge(f, 2);
 		f.addEdge(g, 1);
 		e.addEdge(g, 2);
+
+		AStarSearchAlgo aStar = new AStarSearchAlgo();
+		System.out.println(aStar.isAdmissibleH(s,"G"));
 		
 //		IInformedSearchAlgo aStar = new AStarSearchAlgo();
 //		Node res = aStar.execute(s, g.getLabel());

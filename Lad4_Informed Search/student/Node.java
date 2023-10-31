@@ -19,7 +19,14 @@ public class Node {
 		this.label = label;
 		this.h = h;
 	}
-
+	public Edge getEdge(Node that){
+		for (Edge edge: children) {
+			if (edge.getEnd().equals(that)){
+				return edge;
+			}
+		}
+		return null;
+	}
 	public double getG() {
 		return g;
 	}
@@ -55,6 +62,12 @@ public class Node {
 	// an edge is generated using this node and "that" with the given cost
 	public void addEdge(Node that, double cost) {
 		Edge edge = new Edge(this, that, cost);
+		for (int i = 0; i < children.size(); i++) {
+			if(edge.compareTo(children.get(i))>0){
+				children.add(i,edge);
+				return;
+			}
+		}
 		this.children.add(edge);
 	}
 
