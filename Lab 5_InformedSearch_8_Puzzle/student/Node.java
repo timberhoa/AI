@@ -1,4 +1,4 @@
-package puzzle_8.student;
+package students;
 
 import java.util.Arrays;
 
@@ -6,6 +6,7 @@ public class Node {
 	private int[][] state;
 	private int h;
 	private int g;
+	private int f;
 
 	public Node(int row, int col) {
 		this.state = new int[row][col];
@@ -27,6 +28,11 @@ public class Node {
 
 	public int getF() {
 		return this.g + this.h;
+	}
+
+	public void setF(int f) {
+		this.f = f;
+		
 	}
 
 	public int getH() {
@@ -95,5 +101,7 @@ public class Node {
 
 		return output.toString();
 	}
+
+	
 
 }
