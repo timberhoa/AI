@@ -15,12 +15,21 @@ public class TestNode {
 //		Node goalState = p.getGoalState();
 //		System.out.println(p.getInitialState());
 		System.out.println("H: "+initialState.getH());
-//		System.out.println(Arrays.toString(initialState.getWhiteTilePosition()));
+
+		//		System.out.println(Arrays.toString(initialState.getWhiteTilePosition()));
 //		System.out.println(p.getGoalState());
-		Node re = p.moveWhiteTile(initialState, 'r');
+//		Node re = p.moveWhiteTile(initialState, 'r');
 //
-		System.out.println(re);
-		System.out.println(re.getH());
+//		System.out.println(re);
+//		System.out.println(re.getH());
+		Node re = p.moveWhiteTile(initialState, 'r');
+
+		if (re != null) {
+		    System.out.println("H: " + re.getH());
+		} else {
+		    System.out.println("Bước di chuyển không hợp lệ. 're' là null.");
+		}
+
 		System.out.println(initialState);
 //		System.out.println(Arrays.toString(re.getWhiteTilePosition()));
 //		System.out.println(p.computeH(init, goal));

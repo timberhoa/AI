@@ -1,4 +1,4 @@
-package lab4.inform.student;
+package lab4.inform.student;    
 
 import java.util.*;
 

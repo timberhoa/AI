@@ -1,4 +1,4 @@
-package puzzle_8.student;
+package students;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -62,15 +62,37 @@ public class Puzzle {
 	// The total number of misplaced tiles
 	public int computeH1(Node currentState) {
 		int output = 0;
-		/* Enter your code here */
-		return output;
+
+	    for (int i = 0; i < MAX_ROW; i++) {
+	        for (int j = 0; j < MAX_COL; j++) {
+	            int tile = currentState.getTile(i, j);
+	            int goalTile = getGoalState().getTile(i, j);
+
+	            if (tile != 0 && tile != goalTile) {
+	                output++;
+	            }
+	        }
+	    }
+
+	    return output;
 	}
 
 	// Using manhattanDistance above to compute H
 	public int computeH2(Node currentState) {
-		int result = 0;
-		/* Enter your code here */
-		return result;
+		 int h2 = 0;
+
+		    for (int i = 0; i < MAX_ROW; i++) {
+		        for (int j = 0; j < MAX_COL; j++) {
+		            int tile = currentState.getTile(i, j);
+
+		            if (tile != 0) {
+		                int[] goalPosition = getGoalState().getLocation(tile);
+		                h2 += Math.abs(i - goalPosition[0]) + Math.abs(j - goalPosition[1]);
+		            }
+		        }
+		    }
+
+		    return h2;
 	}
 
 
@@ -127,4 +149,6 @@ public class Puzzle {
 	public Node getGoalState() {
 		return goalState;
 	}
+	
+	
 }
