@@ -39,21 +39,40 @@ public class Node {
 
 	public int getH() {
 		int heuristic = 0;
-		// Enter your code here
+		for (int i = 0; i < N; i++) {
+			for (int j = i + 1; j < N; j++) {
+				if (state[i].isAttacking(state[j])) {
+					heuristic++;
+				}
+			}
+		}
 		return heuristic;
 	}
 
 	public List<Node> generateAllCandidates() {
-		List<Node> result = new ArrayList<Node>();
-
-		// Enter your code here
+		List<Node> result = new ArrayList<>();
+    for (int col = 0; col < N; col++) {
+        for (int row = 0; row < N; row++) {
+            if (state[col].getRow() != row) {
+                // Copy the current state
+                Node newState = new Node(this);
+                newState.state[col].moveToRow(row);
+                result.add(newState);
+            }
+        }
+    }
 		return result;
 	}
 
 	public Node selectNextRandomCandidate() {
 		
-		// Enter your code here
-		return null;
+		List<Node> candidates = generateAllCandidates();
+    if (!candidates.isEmpty()) {
+        Random random = new Random();
+        int randomIndex = random.nextInt(candidates.size());
+        return candidates.get(randomIndex);
+    }
+    return null;
 	}
 
 	public void displayBoard() {
