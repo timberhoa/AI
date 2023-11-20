@@ -63,7 +63,7 @@ public class Node {
     }
 		return result;
 	}
-
+// chọn một trạng thái con ngẫu nhiên từ danh sách trạng thái con được tạo ra.
 	public Node selectNextRandomCandidate() {
 		
 		List<Node> candidates = generateAllCandidates();
